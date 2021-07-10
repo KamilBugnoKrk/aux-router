@@ -12,7 +12,7 @@ npm install --save aux-router
 
 ## Examples
 
-Will be added soon
+Example on [CodesAndBox](https://codesandbox.io/s/aux-router-example-kmrjy?file=/src/App.js)
 
 ## Contributing
 
