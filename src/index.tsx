@@ -2,7 +2,6 @@ import * as React from 'react'
 import {
   useHistory,
   BrowserRouter,
-  Switch,
   Route,
   useRouteMatch
 } from 'react-router-dom'
@@ -53,10 +52,6 @@ export const AuxLink = (props: AuxLinkProps) => {
 
 export const AuxRouter = (props: any) => {
   return <BrowserRouter> {props.children}</BrowserRouter>
-}
-
-export const AuxSwitch = (props: any) => {
-  return <Switch> {props.children}</Switch>
 }
 
 interface AuxRouteProps {
