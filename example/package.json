@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.6",
+    "@material-ui/core": "^4.12.1",
     "@testing-library/jest-dom": "file:../node_modules/@testing-library/jest-dom",
     "@testing-library/react": "file:../node_modules/@testing-library/react",
     "@testing-library/user-event": "file:../node_modules/@testing-library/user-event",

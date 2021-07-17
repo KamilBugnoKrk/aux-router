@@ -1,76 +1,63 @@
 import React from 'react'
-import { AuxLink, AuxRouter, AuxRoute } from 'aux-router'
-
-function One() {
-  return <p>One</p>
-}
-
-function Two() {
-  return <p>Two</p>
-}
-
-function ComponentA() {
-  return (
-    <>
-      <h2>Component A</h2>
-      <nav>
-        <ul>
-          <li>
-            <AuxLink
-              componentName='componentA'
-              componentValue='one'
-              description='Component A - one'
-            />
-          </li>
-          <li>
-            <AuxLink
-              componentName='componentA'
-              componentValue='two'
-              description='Component A - two'
-            />
-          </li>
-        </ul>
-      </nav>
-      <AuxRoute
-        componentName='componentA'
-        componentValue='one'
-        component={One}
-      />
-      <AuxRoute
-        componentName='componentA'
-        componentValue='two'
-        component={Two}
-      />
-    </>
-  )
-}
-
-function ComponentB() {
-  return (
-    <>
-      <h2>Component B</h2>
-      <nav>
-        <ul>
-          <li>
-            <AuxLink componentValue='one' description='Component B - one' />
-          </li>
-          <li>
-            <AuxLink componentValue='two' description='Component B - two' />
-          </li>
-        </ul>
-      </nav>
-      <AuxRoute componentValue='one' component={One} />
-      <AuxRoute componentValue='two' component={Two} />
-    </>
-  )
-}
+import {
+  AuxRouter,
+  AuxMainRoute,
+  AuxMainLink,
+  AuxRoute,
+  AuxLink
+} from 'aux-router'
+import Animals, { Type } from './Animals'
+import { Cats, Dogs } from './MockedData'
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
+import Modal from '@material-ui/core/Modal'
 
 const App = () => {
   return (
     <AuxRouter>
-      <ComponentA />
-      <AuxLink componentName='componentB' description='Show Component B' />
-      <AuxRoute componentName='componentB' component={ComponentB} />
+      <nav>
+        <AuxMainLink path='/cats' description='Cats' />
+        <AuxMainLink path='/dogs' description='Dogs' />
+      </nav>
+      <AuxMainRoute path='/cats'>
+        <Animals type={Type.Modal} animals={Cats} name='Cats' />
+      </AuxMainRoute>
+      <AuxMainRoute path='/dogs'>
+        <Animals type={Type.Panel} animals={Dogs} name='Dogs' />
+      </AuxMainRoute>
+      {Dogs.map((animal) => {
+        return (
+          <AuxRoute componentName='panel' componentValue={animal.name}>
+            <SwipeableDrawer
+              anchor='right'
+              variant='persistent'
+              open={true}
+              onClose={() => {}}
+              onOpen={() => {}}
+            >
+              <div className='panel'>
+                <img src={animal.image} alt={animal.name} />
+                <p>Name: {animal.name}</p>
+                <p>Age: {animal.age}</p>
+                <AuxLink componentName='panel' description='Close' />
+              </div>
+            </SwipeableDrawer>
+          </AuxRoute>
+        )
+      })}
+      {Cats.map((animal) => {
+        return (
+          <AuxRoute componentName='modal' componentValue={animal.name}>
+            <Modal open={true} onClose={() => {}}>
+              <div className='modal'>
+                <img src={animal.image} alt={animal.name} />
+                <p>Name: {animal.name}</p>
+                <p>Age: {animal.age}</p>
+                <AuxLink componentName='modal' description='Close' />
+              </div>
+            </Modal>
+          </AuxRoute>
+        )
+      })}
     </AuxRouter>
   )
 }

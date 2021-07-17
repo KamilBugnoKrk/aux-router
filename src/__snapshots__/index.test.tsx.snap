@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuxLink renders correctly 1`] = `
+<button
+  onClick={[Function]}
+>
+  Component A - one
+</button>
+`;
+
+exports[`AuxRoute does not render when path is empty 1`] = `null`;
+
+exports[`AuxRoute renders nested component when path contains correct data 1`] = `
+Array [
+  <p>
+    One
+  </p>,
+  <p>
+    Two
+  </p>,
+]
+`;
+
+exports[`AuxRoute renders nested component when path contains several independent routes 1`] = `
+<p>
+  Two
+</p>
+`;
+
+exports[`AuxRoute renders when path contains correct data 1`] = `
+<p>
+  One
+</p>
+`;

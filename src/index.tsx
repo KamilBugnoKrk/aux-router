@@ -34,17 +34,47 @@ export const AuxLink = (props: AuxLinkProps) => {
       componentName = componentName.replace(')', '')
       regex = new RegExp(`(${componentName})`)
     } else {
-      regex = new RegExp(`(${componentName}\\/\\w+)`)
+      regex = new RegExp(`(${componentName}\\/\\w*)`)
     }
     let foundComponent = oldPath.match(regex)
 
     if (foundComponent) {
       history.push(
-        oldPath.replace(regex, `${componentName}/${props.componentValue}`)
+        oldPath.replace(
+          regex,
+          `${componentName}/${props.componentValue ? props.componentValue : ''}`
+        )
       )
     } else {
-      history.push(oldPath + `(${componentName}/${props.componentValue})`)
+      history.push(
+        oldPath +
+          `(${componentName}/${
+            props.componentValue ? props.componentValue : ''
+          })`
+      )
     }
+  }
+
+  return <button onClick={onClick}>{props.description}</button>
+}
+
+interface AuxMainLinkProps {
+  path: string
+  description: string
+}
+
+export const AuxMainLink = (props: AuxMainLinkProps) => {
+  const history = useHistory()
+
+  function onClick(): void {
+    let oldPath = history.location.pathname
+    let newPath: string
+    if (oldPath.indexOf('(') >= 0) {
+      newPath = props.path + oldPath.slice(oldPath.indexOf('('))
+    } else {
+      newPath = props.path
+    }
+    history.push(newPath)
   }
 
   return <button onClick={onClick}>{props.description}</button>
@@ -54,10 +84,29 @@ export const AuxRouter = (props: any) => {
   return <BrowserRouter> {props.children}</BrowserRouter>
 }
 
+interface AuxMainRouteProps {
+  path: string
+  component?: any
+  children: React.ReactNode
+}
+
+export const AuxMainRoute = (props: AuxMainRouteProps) => {
+  const getPath = (): string => {
+    return `*${props.path}*`
+  }
+
+  return (
+    <Route path={getPath()} component={props.component}>
+      {props.children}
+    </Route>
+  )
+}
+
 interface AuxRouteProps {
-  component: any
+  component?: any
   componentName?: string
   componentValue?: string
+  children: React.ReactNode
 }
 
 export const AuxRoute = (props: AuxRouteProps) => {
@@ -66,9 +115,8 @@ export const AuxRoute = (props: AuxRouteProps) => {
   const getPath = (): string => {
     if (!props.componentValue) {
       return `*\\(${props.componentName}`
-    } else if (match.url != '/') {
-      debugger
-      return `*${match.url.replaceAll('(', `\\(`).replaceAll(')', `\\)`)}/${
+    } else if (match.url && match.url != '/') {
+      return `*${match.url.replace(/[(]/g, `\\(`).replace(/[)]/, `\\)`)}/${
         props.componentValue
       }\\)*`
     } else {
@@ -76,5 +124,9 @@ export const AuxRoute = (props: AuxRouteProps) => {
     }
   }
 
-  return <Route path={getPath()} component={props.component} />
+  return (
+    <Route path={getPath()} component={props.component}>
+      {props.children}
+    </Route>
+  )
 }
