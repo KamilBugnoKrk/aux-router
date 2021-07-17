@@ -69,10 +69,18 @@ export const AuxMainLink = (props: AuxMainLinkProps) => {
   function onClick(): void {
     let oldPath = history.location.pathname
     let newPath: string
+    let pathPrefix = ''
+    if (
+      oldPath.indexOf('/', 1) >= 0 &&
+      oldPath.indexOf('(', 1) >= oldPath.indexOf('/', 1)
+    ) {
+      pathPrefix =
+        '/' + oldPath.slice(1).slice(0, oldPath.slice(1).indexOf('/'))
+    }
     if (oldPath.indexOf('(') >= 0) {
-      newPath = props.path + oldPath.slice(oldPath.indexOf('('))
+      newPath = pathPrefix + props.path + oldPath.slice(oldPath.indexOf('('))
     } else {
-      newPath = props.path
+      newPath = pathPrefix + props.path
     }
     history.push(newPath)
   }
