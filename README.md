@@ -114,6 +114,10 @@ export default App
 
 [CodesAndBox](https://codesandbox.io/s/aux-router-example-kmrjy?file=/src/App.js)
 
+### More advanced example
+
+[CodesAndBox](https://codesandbox.io/s/advanced-example-bf9vt?file=/src/App.tsx)
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
