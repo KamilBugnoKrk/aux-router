@@ -1,9 +1,9 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import { createMemoryHistory } from 'history'
-import { AuxLink, AuxRoute, AuxMainLink, AuxMainRoute } from './index'
-import Animals, { Type } from './../example/src/Animals'
-import { Cats, Dogs } from './../example/src/MockedData'
+import { AuxLink, AuxRoute, AuxMainLink, AuxMainRoute } from './../../src/index'
+import Animals, { Type } from './Animals'
+import { Cats, Dogs } from './MockedData'
 import { Router } from 'react-router-dom'
 
 it('AuxLink renders correctly', () => {

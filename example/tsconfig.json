@@ -25,6 +25,6 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["src", "../src/setupTests.ts"],
+  "include": ["src", "src/setupTests.ts"],
   "exclude": ["node_modules", "build"]
 }
