@@ -55,3 +55,21 @@ export const Dogs: Animal[] = [
     image: '/aux-router/dog5.png'
   }
 ]
+
+export const Parrots: Animal[] = [
+  {
+    name: 'Dakota',
+    age: 1,
+    image: '/aux-router/parrot1.png'
+  },
+  {
+    name: 'Jasper',
+    age: 3,
+    image: '/aux-router/parrot2.png'
+  },
+  {
+    name: 'Ollie',
+    age: 2,
+    image: '/aux-router/parrot3.png'
+  }
+]

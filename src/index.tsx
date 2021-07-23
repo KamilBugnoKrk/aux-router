@@ -3,7 +3,8 @@ import {
   useHistory,
   BrowserRouter,
   Route,
-  useRouteMatch
+  useRouteMatch,
+  NavLink
 } from 'react-router-dom'
 
 interface AuxLinkProps {
@@ -69,40 +70,48 @@ export const AuxLink = (props: AuxLinkProps) => {
 interface AuxMainLinkProps {
   path: string
   description: string
+  activeStyle?: React.CSSProperties
+  activeClassName?: string
 }
 
 export const AuxMainLink = (props: AuxMainLinkProps) => {
   const history = useHistory()
   const match = useRouteMatch()
 
-  function onClick(): void {
+  function getPath(): string {
     let oldPath = history.location.pathname
     let newPath: string
     let pathPrefix = ''
-    if (
-      oldPath.indexOf('/', 1) >= 0 &&
-      oldPath.indexOf('(', 1) >= oldPath.indexOf('/', 1)
-    ) {
-      pathPrefix =
-        '/' + oldPath.slice(1).slice(0, oldPath.slice(1).indexOf('/'))
-      if (props.path.indexOf(pathPrefix.slice(1)) >= 0) pathPrefix = ''
-      debugger
-    }
+    // if (
+    //   oldPath.indexOf('/', 1) >= 0 &&
+    //   oldPath.indexOf('(', 1) >= oldPath.indexOf('/', 1)
+    // ) {
+    //   pathPrefix =
+    //     '/' + oldPath.slice(1).slice(0, oldPath.slice(1).indexOf('/'))
+    //   if (props.path.indexOf(pathPrefix.slice(1)) >= 0) pathPrefix = ''
+    // }
     if (oldPath.indexOf('(') >= 0) {
       newPath = pathPrefix + props.path + oldPath.slice(oldPath.indexOf('('))
-      debugger
     } else {
       newPath = pathPrefix + props.path
-      debugger
     }
     console.info(match)
     if (newPath.indexOf('/') == 0) {
       newPath = newPath.replace('/', '')
     }
-    history.replace('/' + newPath)
+    // history.replace('/' + newPath)
+    return '/' + newPath
   }
 
-  return <button onClick={onClick}>{props.description}</button>
+  return (
+    <NavLink
+      to={getPath()}
+      activeStyle={props.activeStyle}
+      activeClassName={props.activeClassName}
+    >
+      {props.description}
+    </NavLink>
+  )
 }
 
 export const AuxRouter = (props: any) => {

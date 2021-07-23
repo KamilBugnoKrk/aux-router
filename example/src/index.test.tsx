@@ -5,6 +5,8 @@ import { AuxLink, AuxRoute, AuxMainLink, AuxMainRoute } from './../../src/index'
 import Animals, { Type } from './Animals'
 import { Cats, Dogs } from './MockedData'
 import { Router } from 'react-router-dom'
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
+import Modal from '@material-ui/core/Modal'
 
 it('AuxLink renders correctly', () => {
   const history = createMemoryHistory()
@@ -137,6 +139,7 @@ const advancedExample = (
     <nav>
       <AuxMainLink path='/cats' description='Cats' />
       <AuxMainLink path='/dogs' description='Dogs' />
+      <AuxMainLink path='/birds' description='Birds' />
     </nav>
     <AuxMainRoute path='/cats'>
       <Animals type={Type.Modal} animals={Cats} name='Cats' />
@@ -147,28 +150,39 @@ const advancedExample = (
     {Dogs.map((animal, index) => {
       return (
         <AuxRoute componentName='panel' componentValue={animal.name}>
-          <div key={`${animal.name}-${index}`}>
+          <SwipeableDrawer
+            anchor='right'
+            variant='persistent'
+            open={true}
+            onClose={() => {}}
+            onOpen={() => {}}
+            key={`dogs-${animal.name}-${index}`}
+          >
             <div className='panel'>
               <img src={animal.image} alt={animal.name} />
               <p>Name: {animal.name}</p>
               <p>Age: {animal.age}</p>
               <AuxLink componentName='panel' description='Close' />
             </div>
-          </div>
+          </SwipeableDrawer>
         </AuxRoute>
       )
     })}
     {Cats.map((animal, index) => {
       return (
         <AuxRoute componentName='modal' componentValue={animal.name}>
-          <div key={`${animal.name}-${index}`}>
+          <Modal
+            open={true}
+            onClose={() => {}}
+            key={`cats-${animal.name}-${index}`}
+          >
             <div className='modal'>
               <img src={animal.image} alt={animal.name} />
               <p>Name: {animal.name}</p>
               <p>Age: {animal.age}</p>
               <AuxLink componentName='modal' description='Close' />
             </div>
-          </div>
+          </Modal>
         </AuxRoute>
       )
     })}

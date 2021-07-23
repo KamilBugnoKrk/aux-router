@@ -13,6 +13,11 @@ Array [
     >
       Dogs
     </button>
+    <button
+      onClick={[Function]}
+    >
+      Birds
+    </button>
   </nav>,
   <section>
     <h1>
@@ -101,27 +106,39 @@ Array [
       </li>
     </ul>
   </section>,
-  <div>
+  <div
+    className="MuiDrawer-root MuiDrawer-docked"
+  >
     <div
-      className="panel"
+      className="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      style={
+        Object {
+          "pointerEvents": "",
+          "visibility": undefined,
+        }
+      }
     >
-      <img
-        alt="Bean"
-        src="/aux-router/dog1.png"
-      />
-      <p>
-        Name: 
-        Bean
-      </p>
-      <p>
-        Age: 
-        5
-      </p>
-      <button
-        onClick={[Function]}
+      <div
+        className="panel"
       >
-        Close
-      </button>
+        <img
+          alt="Bean"
+          src="/aux-router/dog1.png"
+        />
+        <p>
+          Name: 
+          Bean
+        </p>
+        <p>
+          Age: 
+          5
+        </p>
+        <button
+          onClick={[Function]}
+        >
+          Close
+        </button>
+      </div>
     </div>
   </div>,
 ]
@@ -140,6 +157,11 @@ Array [
     >
       Dogs
     </button>
+    <button
+      onClick={[Function]}
+    >
+      Birds
+    </button>
   </nav>,
   <section>
     <h1>
@@ -228,27 +250,39 @@ Array [
       </li>
     </ul>
   </section>,
-  <div>
+  <div
+    className="MuiDrawer-root MuiDrawer-docked"
+  >
     <div
-      className="panel"
+      className="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      style={
+        Object {
+          "pointerEvents": "",
+          "visibility": undefined,
+        }
+      }
     >
-      <img
-        alt="Bean"
-        src="/aux-router/dog1.png"
-      />
-      <p>
-        Name: 
-        Bean
-      </p>
-      <p>
-        Age: 
-        5
-      </p>
-      <button
-        onClick={[Function]}
+      <div
+        className="panel"
       >
-        Close
-      </button>
+        <img
+          alt="Bean"
+          src="/aux-router/dog1.png"
+        />
+        <p>
+          Name: 
+          Bean
+        </p>
+        <p>
+          Age: 
+          5
+        </p>
+        <button
+          onClick={[Function]}
+        >
+          Close
+        </button>
+      </div>
     </div>
   </div>,
 ]
@@ -267,6 +301,11 @@ Array [
     >
       Dogs
     </button>
+    <button
+      onClick={[Function]}
+    >
+      Birds
+    </button>
   </nav>,
   <section>
     <h1>
@@ -355,29 +394,6 @@ Array [
       </li>
     </ul>
   </section>,
-  <div>
-    <div
-      className="modal"
-    >
-      <img
-        alt="Bella"
-        src="/aux-router/cat1.png"
-      />
-      <p>
-        Name: 
-        Bella
-      </p>
-      <p>
-        Age: 
-        3
-      </p>
-      <button
-        onClick={[Function]}
-      >
-        Close
-      </button>
-    </div>
-  </div>,
 ]
 `;
 
@@ -394,6 +410,11 @@ Array [
     >
       Dogs
     </button>
+    <button
+      onClick={[Function]}
+    >
+      Birds
+    </button>
   </nav>,
   <section>
     <h1>
@@ -482,29 +503,6 @@ Array [
       </li>
     </ul>
   </section>,
-  <div>
-    <div
-      className="modal"
-    >
-      <img
-        alt="Bella"
-        src="/aux-router/cat1.png"
-      />
-      <p>
-        Name: 
-        Bella
-      </p>
-      <p>
-        Age: 
-        3
-      </p>
-      <button
-        onClick={[Function]}
-      >
-        Close
-      </button>
-    </div>
-  </div>,
 ]
 `;
 
@@ -521,32 +519,21 @@ Array [
     >
       Dogs
     </button>
+    <button
+      onClick={[Function]}
+    >
+      Birds
+    </button>
   </nav>,
   <section>
     <h1>
-      Dogs
+      Cats
     </h1>
     <ul>
       <li>
         <img
-          alt="Bean"
-          src="/aux-router/dog1.png"
-        />
-        <div>
-          <h2>
-            Bean
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open panel
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
           alt="Bella"
-          src="/aux-router/dog2.png"
+          src="/aux-router/cat1.png"
         />
         <div>
           <h2>
@@ -555,83 +542,76 @@ Array [
           <button
             onClick={[Function]}
           >
-            Open panel
+            Open modal
           </button>
         </div>
       </li>
       <li>
         <img
-          alt="Axel"
-          src="/aux-router/dog3.png"
+          alt="Kitty"
+          src="/aux-router/cat2.png"
         />
         <div>
           <h2>
-            Axel
+            Kitty
           </h2>
           <button
             onClick={[Function]}
           >
-            Open panel
+            Open modal
           </button>
         </div>
       </li>
       <li>
         <img
-          alt="Odie"
-          src="/aux-router/dog4.png"
+          alt="Charlie"
+          src="/aux-router/cat3.png"
         />
         <div>
           <h2>
-            Odie
+            Charlie
           </h2>
           <button
             onClick={[Function]}
           >
-            Open panel
+            Open modal
           </button>
         </div>
       </li>
       <li>
         <img
-          alt="Sheba"
-          src="/aux-router/dog5.png"
+          alt="Leo"
+          src="/aux-router/cat4.png"
         />
         <div>
           <h2>
-            Sheba
+            Leo
           </h2>
           <button
             onClick={[Function]}
           >
-            Open panel
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Milo"
+          src="/aux-router/cat5.png"
+        />
+        <div>
+          <h2>
+            Milo
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
           </button>
         </div>
       </li>
     </ul>
   </section>,
-  <div>
-    <div
-      className="panel"
-    >
-      <img
-        alt="Bean"
-        src="/aux-router/dog1.png"
-      />
-      <p>
-        Name: 
-        Bean
-      </p>
-      <p>
-        Age: 
-        5
-      </p>
-      <button
-        onClick={[Function]}
-      >
-        Close
-      </button>
-    </div>
-  </div>,
 ]
 `;
 
@@ -648,32 +628,21 @@ Array [
     >
       Dogs
     </button>
+    <button
+      onClick={[Function]}
+    >
+      Birds
+    </button>
   </nav>,
   <section>
     <h1>
-      Dogs
+      Cats
     </h1>
     <ul>
       <li>
         <img
-          alt="Bean"
-          src="/aux-router/dog1.png"
-        />
-        <div>
-          <h2>
-            Bean
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open panel
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
           alt="Bella"
-          src="/aux-router/dog2.png"
+          src="/aux-router/cat1.png"
         />
         <div>
           <h2>
@@ -682,60 +651,111 @@ Array [
           <button
             onClick={[Function]}
           >
-            Open panel
+            Open modal
           </button>
         </div>
       </li>
       <li>
         <img
-          alt="Axel"
-          src="/aux-router/dog3.png"
+          alt="Kitty"
+          src="/aux-router/cat2.png"
         />
         <div>
           <h2>
-            Axel
+            Kitty
           </h2>
           <button
             onClick={[Function]}
           >
-            Open panel
+            Open modal
           </button>
         </div>
       </li>
       <li>
         <img
-          alt="Odie"
-          src="/aux-router/dog4.png"
+          alt="Charlie"
+          src="/aux-router/cat3.png"
         />
         <div>
           <h2>
-            Odie
+            Charlie
           </h2>
           <button
             onClick={[Function]}
           >
-            Open panel
+            Open modal
           </button>
         </div>
       </li>
       <li>
         <img
-          alt="Sheba"
-          src="/aux-router/dog5.png"
+          alt="Leo"
+          src="/aux-router/cat4.png"
         />
         <div>
           <h2>
-            Sheba
+            Leo
           </h2>
           <button
             onClick={[Function]}
           >
-            Open panel
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Milo"
+          src="/aux-router/cat5.png"
+        />
+        <div>
+          <h2>
+            Milo
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
           </button>
         </div>
       </li>
     </ul>
   </section>,
+  <div
+    className="MuiDrawer-root MuiDrawer-docked"
+  >
+    <div
+      className="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      style={
+        Object {
+          "pointerEvents": "",
+          "visibility": undefined,
+        }
+      }
+    >
+      <div
+        className="panel"
+      >
+        <img
+          alt="Bean"
+          src="/aux-router/dog1.png"
+        />
+        <p>
+          Name: 
+          Bean
+        </p>
+        <p>
+          Age: 
+          5
+        </p>
+        <button
+          onClick={[Function]}
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>,
 ]
 `;
 

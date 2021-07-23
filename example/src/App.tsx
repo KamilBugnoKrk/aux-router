@@ -7,7 +7,7 @@ import {
   AuxLink
 } from 'aux-router'
 import Animals, { Type } from './Animals'
-import { Cats, Dogs } from './MockedData'
+import { Cats, Dogs, Parrots } from './MockedData'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
 import Modal from '@material-ui/core/Modal'
 import Birds from './Birds'
@@ -16,20 +16,32 @@ const App = () => {
   return (
     <AuxRouter>
       <nav>
-        <AuxMainLink path='/cats' description='Cats' />
-        <AuxMainLink path='/dogs' description='Dogs' />
-        <AuxMainLink path='/birds' description='Birds' />
+        <AuxMainLink
+          activeClassName='selected'
+          path='/cats'
+          description='Cats'
+        />
+        <AuxMainLink
+          activeClassName='selected'
+          path='/dogs'
+          description='Dogs'
+        />
+        <AuxMainLink
+          activeClassName='selected'
+          path='/birds'
+          description='Birds'
+        />
       </nav>
       <AuxMainRoute path='/cats'>
-        <Animals type={Type.Modal} animals={Cats} name='Cats' />
+        <Animals type={Type.Cat} animals={Cats} name='Cats' />
       </AuxMainRoute>
       <AuxMainRoute path='/dogs'>
-        <Animals type={Type.Panel} animals={Dogs} name='Dogs' />
+        <Animals type={Type.Dog} animals={Dogs} name='Dogs' />
       </AuxMainRoute>
       <AuxMainRoute path='/birds' component={Birds} />
       {Dogs.map((animal, index) => {
         return (
-          <AuxRoute componentName='panel' componentValue={animal.name}>
+          <AuxRoute componentName='panel-dog' componentValue={animal.name}>
             <SwipeableDrawer
               anchor='right'
               variant='persistent'
@@ -42,7 +54,28 @@ const App = () => {
                 <img src={animal.image} alt={animal.name} />
                 <p>Name: {animal.name}</p>
                 <p>Age: {animal.age}</p>
-                <AuxLink componentName='panel' description='Close' />
+                <AuxLink componentName='panel-dog' description='Close' />
+              </div>
+            </SwipeableDrawer>
+          </AuxRoute>
+        )
+      })}
+      {Parrots.map((animal, index) => {
+        return (
+          <AuxRoute componentName='panel-parrot' componentValue={animal.name}>
+            <SwipeableDrawer
+              anchor='bottom'
+              variant='persistent'
+              open={true}
+              onClose={() => {}}
+              onOpen={() => {}}
+              key={`${animal.name}-${index}`}
+            >
+              <div className='panel'>
+                <img src={animal.image} alt={animal.name} />
+                <p>Name: {animal.name}</p>
+                <p>Age: {animal.age}</p>
+                <AuxLink componentName='panel-parrot' description='Close' />
               </div>
             </SwipeableDrawer>
           </AuxRoute>
@@ -50,7 +83,7 @@ const App = () => {
       })}
       {Cats.map((animal, index) => {
         return (
-          <AuxRoute componentName='modal' componentValue={animal.name}>
+          <AuxRoute componentName='modal-cat' componentValue={animal.name}>
             <Modal
               open={true}
               onClose={() => {}}
@@ -60,7 +93,7 @@ const App = () => {
                 <img src={animal.image} alt={animal.name} />
                 <p>Name: {animal.name}</p>
                 <p>Age: {animal.age}</p>
-                <AuxLink componentName='modal' description='Close' />
+                <AuxLink componentName='modal-cat' description='Close' />
               </div>
             </Modal>
           </AuxRoute>

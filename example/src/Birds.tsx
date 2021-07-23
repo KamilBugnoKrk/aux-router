@@ -1,21 +1,24 @@
 import React from 'react'
 import { AuxMainLink, AuxMainRoute } from 'aux-router'
+import Animals, { Type } from './Animals'
+import { Parrots } from './MockedData'
 
 const Birds = () => {
   return (
     <div>
       <h2>Choose a type of birds:</h2>
-      <ul>
-        <li>
-          <AuxMainLink path='birds/parrots' description='Parrots' />
-        </li>
-        <li>
-          <AuxMainLink path='birds/others' description='Others' />
-        </li>
-      </ul>
-
+      <AuxMainLink
+        activeClassName='selected'
+        path='birds/parrots'
+        description='Parrots'
+      />
+      <AuxMainLink
+        activeClassName='selected'
+        path='birds/others'
+        description='Others'
+      />
       <AuxMainRoute path='birds/parrots'>
-        <h3>Parrots.</h3>
+        <Animals type={Type.Parrot} animals={Parrots} name='Parrots' />
       </AuxMainRoute>
       <AuxMainRoute path='birds/others'>
         <h3>Others.</h3>
