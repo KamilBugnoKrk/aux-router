@@ -95,7 +95,7 @@ export const AuxRouter = (props: any) => {
 interface AuxMainRouteProps {
   path: string
   component?: any
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
 export const AuxMainRoute = (props: AuxMainRouteProps) => {
@@ -114,7 +114,7 @@ interface AuxRouteProps {
   component?: any
   componentName?: string
   componentValue?: string
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
 export const AuxRoute = (props: AuxRouteProps) => {
