@@ -12,6 +12,14 @@ interface AuxLinkProps {
   description: string
 }
 
+export const getMainRoute = () => {
+  let { url } = useRouteMatch()
+  if (url.indexOf('(') >= 0) {
+    return url.slice(0, url.indexOf('('))
+  }
+  return url
+}
+
 export const AuxLink = (props: AuxLinkProps) => {
   const history = useHistory()
   const match = useRouteMatch()
@@ -65,6 +73,7 @@ interface AuxMainLinkProps {
 
 export const AuxMainLink = (props: AuxMainLinkProps) => {
   const history = useHistory()
+  const match = useRouteMatch()
 
   function onClick(): void {
     let oldPath = history.location.pathname
@@ -76,13 +85,21 @@ export const AuxMainLink = (props: AuxMainLinkProps) => {
     ) {
       pathPrefix =
         '/' + oldPath.slice(1).slice(0, oldPath.slice(1).indexOf('/'))
+      if (props.path.indexOf(pathPrefix.slice(1)) >= 0) pathPrefix = ''
+      debugger
     }
     if (oldPath.indexOf('(') >= 0) {
       newPath = pathPrefix + props.path + oldPath.slice(oldPath.indexOf('('))
+      debugger
     } else {
       newPath = pathPrefix + props.path
+      debugger
     }
-    history.push(newPath)
+    console.info(match)
+    if (newPath.indexOf('/') == 0) {
+      newPath = newPath.replace('/', '')
+    }
+    history.replace('/' + newPath)
   }
 
   return <button onClick={onClick}>{props.description}</button>
