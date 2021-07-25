@@ -1,23 +1,1190 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Advanced example 1`] = `
+exports[`Advanced example /birds 1`] = `
 Array [
   <nav>
-    <button
+    <a
+      aria-current={null}
+      href="/cats"
       onClick={[Function]}
     >
       Cats
-    </button>
-    <button
+    </a>
+    <a
+      aria-current={null}
+      href="/dogs"
       onClick={[Function]}
     >
       Dogs
-    </button>
-    <button
+    </a>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/birds"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Birds
+    </a>
+  </nav>,
+  <div>
+    <h2>
+      Choose a type of birds:
+    </h2>
+    <a
+      aria-current={null}
+      href="/birds/parrots"
+      onClick={[Function]}
+    >
+      Parrots
+    </a>
+    <a
+      aria-current={null}
+      href="/birds/others"
+      onClick={[Function]}
+    >
+      Others
+    </a>
+  </div>,
+]
+`;
+
+exports[`Advanced example /birds/parrots 1`] = `
+Array [
+  <nav>
+    <a
+      aria-current={null}
+      href="/cats"
+      onClick={[Function]}
+    >
+      Cats
+    </a>
+    <a
+      aria-current={null}
+      href="/dogs"
+      onClick={[Function]}
+    >
+      Dogs
+    </a>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/birds"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Birds
+    </a>
+  </nav>,
+  <div>
+    <h2>
+      Choose a type of birds:
+    </h2>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/birds/parrots"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Parrots
+    </a>
+    <a
+      aria-current={null}
+      href="/birds/others"
+      onClick={[Function]}
+    >
+      Others
+    </a>
+    <section>
+      <h1>
+        Parrots
+      </h1>
+      <ul>
+        <li>
+          <img
+            alt="Dakota"
+            src="/aux-router/parrot1.png"
+          />
+          <div>
+            <h2>
+              Dakota
+            </h2>
+            <button
+              onClick={[Function]}
+            >
+              Open panel
+            </button>
+          </div>
+        </li>
+        <li>
+          <img
+            alt="Jasper"
+            src="/aux-router/parrot2.png"
+          />
+          <div>
+            <h2>
+              Jasper
+            </h2>
+            <button
+              onClick={[Function]}
+            >
+              Open panel
+            </button>
+          </div>
+        </li>
+        <li>
+          <img
+            alt="Ollie"
+            src="/aux-router/parrot3.png"
+          />
+          <div>
+            <h2>
+              Ollie
+            </h2>
+            <button
+              onClick={[Function]}
+            >
+              Open panel
+            </button>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>,
+]
+`;
+
+exports[`Advanced example /birds/parrots 2`] = `
+Array [
+  <nav>
+    <a
+      aria-current={null}
+      href="/cats"
+      onClick={[Function]}
+    >
+      Cats
+    </a>
+    <a
+      aria-current={null}
+      href="/dogs"
+      onClick={[Function]}
+    >
+      Dogs
+    </a>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/birds"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Birds
+    </a>
+  </nav>,
+  <div>
+    <h2>
+      Choose a type of birds:
+    </h2>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/birds/parrots"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Parrots
+    </a>
+    <a
+      aria-current={null}
+      href="/birds/others"
+      onClick={[Function]}
+    >
+      Others
+    </a>
+    <section>
+      <h1>
+        Parrots
+      </h1>
+      <ul>
+        <li>
+          <img
+            alt="Dakota"
+            src="/aux-router/parrot1.png"
+          />
+          <div>
+            <h2>
+              Dakota
+            </h2>
+            <button
+              onClick={[Function]}
+            >
+              Open panel
+            </button>
+          </div>
+        </li>
+        <li>
+          <img
+            alt="Jasper"
+            src="/aux-router/parrot2.png"
+          />
+          <div>
+            <h2>
+              Jasper
+            </h2>
+            <button
+              onClick={[Function]}
+            >
+              Open panel
+            </button>
+          </div>
+        </li>
+        <li>
+          <img
+            alt="Ollie"
+            src="/aux-router/parrot3.png"
+          />
+          <div>
+            <h2>
+              Ollie
+            </h2>
+            <button
+              onClick={[Function]}
+            >
+              Open panel
+            </button>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>,
+]
+`;
+
+exports[`Advanced example /birds/parrots(panel-parrot/Dakota) 1`] = `
+Array [
+  <nav>
+    <a
+      aria-current={null}
+      href="/cats(panel-parrot/Dakota)"
+      onClick={[Function]}
+    >
+      Cats
+    </a>
+    <a
+      aria-current={null}
+      href="/dogs(panel-parrot/Dakota)"
+      onClick={[Function]}
+    >
+      Dogs
+    </a>
+    <a
+      aria-current={null}
+      href="/birds(panel-parrot/Dakota)"
       onClick={[Function]}
     >
       Birds
-    </button>
+    </a>
+  </nav>,
+  <div>
+    <h2>
+      Choose a type of birds:
+    </h2>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/birds/parrots(panel-parrot/Dakota)"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Parrots
+    </a>
+    <a
+      aria-current={null}
+      href="/birds/others(panel-parrot/Dakota)"
+      onClick={[Function]}
+    >
+      Others
+    </a>
+    <section>
+      <h1>
+        Parrots
+      </h1>
+      <ul>
+        <li>
+          <img
+            alt="Dakota"
+            src="/aux-router/parrot1.png"
+          />
+          <div>
+            <h2>
+              Dakota
+            </h2>
+            <button
+              onClick={[Function]}
+            >
+              Open panel
+            </button>
+          </div>
+        </li>
+        <li>
+          <img
+            alt="Jasper"
+            src="/aux-router/parrot2.png"
+          />
+          <div>
+            <h2>
+              Jasper
+            </h2>
+            <button
+              onClick={[Function]}
+            >
+              Open panel
+            </button>
+          </div>
+        </li>
+        <li>
+          <img
+            alt="Ollie"
+            src="/aux-router/parrot3.png"
+          />
+          <div>
+            <h2>
+              Ollie
+            </h2>
+            <button
+              onClick={[Function]}
+            >
+              Open panel
+            </button>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>,
+  <div
+    className="MuiDrawer-root MuiDrawer-docked"
+  >
+    <div
+      className="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorBottom MuiDrawer-paperAnchorDockedBottom MuiPaper-elevation0"
+      style={
+        Object {
+          "pointerEvents": "",
+          "visibility": undefined,
+        }
+      }
+    >
+      <div
+        className="panel"
+      >
+        <img
+          alt="Dakota"
+          src="/aux-router/parrot1.png"
+        />
+        <p>
+          Name: 
+          Dakota
+        </p>
+        <p>
+          Age: 
+          1
+        </p>
+        <button
+          onClick={[Function]}
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Advanced example /birds/parrots(panel-parrot/Ollie)(modal-cat/)(panel-dog/Bean) 1`] = `
+Array [
+  <nav>
+    <a
+      aria-current={null}
+      href="/cats(panel-parrot/Ollie)(modal-cat/)(panel-dog/Bean)"
+      onClick={[Function]}
+    >
+      Cats
+    </a>
+    <a
+      aria-current={null}
+      href="/dogs(panel-parrot/Ollie)(modal-cat/)(panel-dog/Bean)"
+      onClick={[Function]}
+    >
+      Dogs
+    </a>
+    <a
+      aria-current={null}
+      href="/birds(panel-parrot/Ollie)(modal-cat/)(panel-dog/Bean)"
+      onClick={[Function]}
+    >
+      Birds
+    </a>
+  </nav>,
+  <div>
+    <h2>
+      Choose a type of birds:
+    </h2>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/birds/parrots(panel-parrot/Ollie)(modal-cat/)(panel-dog/Bean)"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Parrots
+    </a>
+    <a
+      aria-current={null}
+      href="/birds/others(panel-parrot/Ollie)(modal-cat/)(panel-dog/Bean)"
+      onClick={[Function]}
+    >
+      Others
+    </a>
+    <section>
+      <h1>
+        Parrots
+      </h1>
+      <ul>
+        <li>
+          <img
+            alt="Dakota"
+            src="/aux-router/parrot1.png"
+          />
+          <div>
+            <h2>
+              Dakota
+            </h2>
+            <button
+              onClick={[Function]}
+            >
+              Open panel
+            </button>
+          </div>
+        </li>
+        <li>
+          <img
+            alt="Jasper"
+            src="/aux-router/parrot2.png"
+          />
+          <div>
+            <h2>
+              Jasper
+            </h2>
+            <button
+              onClick={[Function]}
+            >
+              Open panel
+            </button>
+          </div>
+        </li>
+        <li>
+          <img
+            alt="Ollie"
+            src="/aux-router/parrot3.png"
+          />
+          <div>
+            <h2>
+              Ollie
+            </h2>
+            <button
+              onClick={[Function]}
+            >
+              Open panel
+            </button>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>,
+  <div
+    className="MuiDrawer-root MuiDrawer-docked"
+  >
+    <div
+      className="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      style={
+        Object {
+          "pointerEvents": "",
+          "visibility": undefined,
+        }
+      }
+    >
+      <div
+        className="panel"
+      >
+        <img
+          alt="Bean"
+          src="/aux-router/dog1.png"
+        />
+        <p>
+          Name: 
+          Bean
+        </p>
+        <p>
+          Age: 
+          5
+        </p>
+        <button
+          onClick={[Function]}
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="MuiDrawer-root MuiDrawer-docked"
+  >
+    <div
+      className="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorBottom MuiDrawer-paperAnchorDockedBottom MuiPaper-elevation0"
+      style={
+        Object {
+          "pointerEvents": "",
+          "visibility": undefined,
+        }
+      }
+    >
+      <div
+        className="panel"
+      >
+        <img
+          alt="Ollie"
+          src="/aux-router/parrot3.png"
+        />
+        <p>
+          Name: 
+          Ollie
+        </p>
+        <p>
+          Age: 
+          2
+        </p>
+        <button
+          onClick={[Function]}
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Advanced example /cats 1`] = `
+Array [
+  <nav>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/cats"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Cats
+    </a>
+    <a
+      aria-current={null}
+      href="/dogs"
+      onClick={[Function]}
+    >
+      Dogs
+    </a>
+    <a
+      aria-current={null}
+      href="/birds"
+      onClick={[Function]}
+    >
+      Birds
+    </a>
+  </nav>,
+  <section>
+    <h1>
+      Cats
+    </h1>
+    <ul>
+      <li>
+        <img
+          alt="Bella"
+          src="/aux-router/cat1.png"
+        />
+        <div>
+          <h2>
+            Bella
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Kitty"
+          src="/aux-router/cat2.png"
+        />
+        <div>
+          <h2>
+            Kitty
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Charlie"
+          src="/aux-router/cat3.png"
+        />
+        <div>
+          <h2>
+            Charlie
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Leo"
+          src="/aux-router/cat4.png"
+        />
+        <div>
+          <h2>
+            Leo
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Milo"
+          src="/aux-router/cat5.png"
+        />
+        <div>
+          <h2>
+            Milo
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+    </ul>
+  </section>,
+]
+`;
+
+exports[`Advanced example /cats(modal/)(panel/Bean) 1`] = `
+Array [
+  <nav>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/cats(modal/)(panel/Bean)"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Cats
+    </a>
+    <a
+      aria-current={null}
+      href="/dogs(modal/)(panel/Bean)"
+      onClick={[Function]}
+    >
+      Dogs
+    </a>
+    <a
+      aria-current={null}
+      href="/birds(modal/)(panel/Bean)"
+      onClick={[Function]}
+    >
+      Birds
+    </a>
+  </nav>,
+  <section>
+    <h1>
+      Cats
+    </h1>
+    <ul>
+      <li>
+        <img
+          alt="Bella"
+          src="/aux-router/cat1.png"
+        />
+        <div>
+          <h2>
+            Bella
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Kitty"
+          src="/aux-router/cat2.png"
+        />
+        <div>
+          <h2>
+            Kitty
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Charlie"
+          src="/aux-router/cat3.png"
+        />
+        <div>
+          <h2>
+            Charlie
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Leo"
+          src="/aux-router/cat4.png"
+        />
+        <div>
+          <h2>
+            Leo
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Milo"
+          src="/aux-router/cat5.png"
+        />
+        <div>
+          <h2>
+            Milo
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+    </ul>
+  </section>,
+]
+`;
+
+exports[`Advanced example /cats(modal/)(panel/Bean) 2`] = `
+Array [
+  <nav>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/cats(modal/)(panel/Bean)"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Cats
+    </a>
+    <a
+      aria-current={null}
+      href="/dogs(modal/)(panel/Bean)"
+      onClick={[Function]}
+    >
+      Dogs
+    </a>
+    <a
+      aria-current={null}
+      href="/birds(modal/)(panel/Bean)"
+      onClick={[Function]}
+    >
+      Birds
+    </a>
+  </nav>,
+  <section>
+    <h1>
+      Cats
+    </h1>
+    <ul>
+      <li>
+        <img
+          alt="Bella"
+          src="/aux-router/cat1.png"
+        />
+        <div>
+          <h2>
+            Bella
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Kitty"
+          src="/aux-router/cat2.png"
+        />
+        <div>
+          <h2>
+            Kitty
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Charlie"
+          src="/aux-router/cat3.png"
+        />
+        <div>
+          <h2>
+            Charlie
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Leo"
+          src="/aux-router/cat4.png"
+        />
+        <div>
+          <h2>
+            Leo
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Milo"
+          src="/aux-router/cat5.png"
+        />
+        <div>
+          <h2>
+            Milo
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+    </ul>
+  </section>,
+]
+`;
+
+exports[`Advanced example /cats(modal/Bella)(panel/) 1`] = `
+Array [
+  <nav>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/cats(modal/Bella)(panel/)"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Cats
+    </a>
+    <a
+      aria-current={null}
+      href="/dogs(modal/Bella)(panel/)"
+      onClick={[Function]}
+    >
+      Dogs
+    </a>
+    <a
+      aria-current={null}
+      href="/birds(modal/Bella)(panel/)"
+      onClick={[Function]}
+    >
+      Birds
+    </a>
+  </nav>,
+  <section>
+    <h1>
+      Cats
+    </h1>
+    <ul>
+      <li>
+        <img
+          alt="Bella"
+          src="/aux-router/cat1.png"
+        />
+        <div>
+          <h2>
+            Bella
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Kitty"
+          src="/aux-router/cat2.png"
+        />
+        <div>
+          <h2>
+            Kitty
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Charlie"
+          src="/aux-router/cat3.png"
+        />
+        <div>
+          <h2>
+            Charlie
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Leo"
+          src="/aux-router/cat4.png"
+        />
+        <div>
+          <h2>
+            Leo
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Milo"
+          src="/aux-router/cat5.png"
+        />
+        <div>
+          <h2>
+            Milo
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+    </ul>
+  </section>,
+]
+`;
+
+exports[`Advanced example /cats(modal/Kitty)(panel/Bean) 1`] = `
+Array [
+  <nav>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/cats(modal/Kitty)(panel/Bean)"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Cats
+    </a>
+    <a
+      aria-current={null}
+      href="/dogs(modal/Kitty)(panel/Bean)"
+      onClick={[Function]}
+    >
+      Dogs
+    </a>
+    <a
+      aria-current={null}
+      href="/birds(modal/Kitty)(panel/Bean)"
+      onClick={[Function]}
+    >
+      Birds
+    </a>
+  </nav>,
+  <section>
+    <h1>
+      Cats
+    </h1>
+    <ul>
+      <li>
+        <img
+          alt="Bella"
+          src="/aux-router/cat1.png"
+        />
+        <div>
+          <h2>
+            Bella
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Kitty"
+          src="/aux-router/cat2.png"
+        />
+        <div>
+          <h2>
+            Kitty
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Charlie"
+          src="/aux-router/cat3.png"
+        />
+        <div>
+          <h2>
+            Charlie
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Leo"
+          src="/aux-router/cat4.png"
+        />
+        <div>
+          <h2>
+            Leo
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Milo"
+          src="/aux-router/cat5.png"
+        />
+        <div>
+          <h2>
+            Milo
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open modal
+          </button>
+        </div>
+      </li>
+    </ul>
+  </section>,
+]
+`;
+
+exports[`Advanced example /cats(panel-parrot/Dakota) 1`] = `
+Array [
+  <nav>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/cats(panel-parrot/Dakota)"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Cats
+    </a>
+    <a
+      aria-current={null}
+      href="/dogs(panel-parrot/Dakota)"
+      onClick={[Function]}
+    >
+      Dogs
+    </a>
+    <a
+      aria-current={null}
+      href="/birds(panel-parrot/Dakota)"
+      onClick={[Function]}
+    >
+      Birds
+    </a>
   </nav>,
   <section>
     <h1>
@@ -110,7 +1277,7 @@ Array [
     className="MuiDrawer-root MuiDrawer-docked"
   >
     <div
-      className="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      className="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorBottom MuiDrawer-paperAnchorDockedBottom MuiPaper-elevation0"
       style={
         Object {
           "pointerEvents": "",
@@ -122,16 +1289,16 @@ Array [
         className="panel"
       >
         <img
-          alt="Bean"
-          src="/aux-router/dog1.png"
+          alt="Dakota"
+          src="/aux-router/parrot1.png"
         />
         <p>
           Name: 
-          Bean
+          Dakota
         </p>
         <p>
           Age: 
-          5
+          1
         </p>
         <button
           onClick={[Function]}
@@ -144,277 +1311,32 @@ Array [
 ]
 `;
 
-exports[`Advanced example 2`] = `
+exports[`Advanced example /dogs 1`] = `
 Array [
   <nav>
-    <button
+    <a
+      aria-current={null}
+      href="/cats"
       onClick={[Function]}
     >
       Cats
-    </button>
-    <button
+    </a>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/dogs"
       onClick={[Function]}
+      style={Object {}}
     >
       Dogs
-    </button>
-    <button
+    </a>
+    <a
+      aria-current={null}
+      href="/birds"
       onClick={[Function]}
     >
       Birds
-    </button>
-  </nav>,
-  <section>
-    <h1>
-      Cats
-    </h1>
-    <ul>
-      <li>
-        <img
-          alt="Bella"
-          src="/aux-router/cat1.png"
-        />
-        <div>
-          <h2>
-            Bella
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Kitty"
-          src="/aux-router/cat2.png"
-        />
-        <div>
-          <h2>
-            Kitty
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Charlie"
-          src="/aux-router/cat3.png"
-        />
-        <div>
-          <h2>
-            Charlie
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Leo"
-          src="/aux-router/cat4.png"
-        />
-        <div>
-          <h2>
-            Leo
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Milo"
-          src="/aux-router/cat5.png"
-        />
-        <div>
-          <h2>
-            Milo
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-    </ul>
-  </section>,
-  <div
-    className="MuiDrawer-root MuiDrawer-docked"
-  >
-    <div
-      className="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
-      style={
-        Object {
-          "pointerEvents": "",
-          "visibility": undefined,
-        }
-      }
-    >
-      <div
-        className="panel"
-      >
-        <img
-          alt="Bean"
-          src="/aux-router/dog1.png"
-        />
-        <p>
-          Name: 
-          Bean
-        </p>
-        <p>
-          Age: 
-          5
-        </p>
-        <button
-          onClick={[Function]}
-        >
-          Close
-        </button>
-      </div>
-    </div>
-  </div>,
-]
-`;
-
-exports[`Advanced example 3`] = `
-Array [
-  <nav>
-    <button
-      onClick={[Function]}
-    >
-      Cats
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      Dogs
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      Birds
-    </button>
-  </nav>,
-  <section>
-    <h1>
-      Cats
-    </h1>
-    <ul>
-      <li>
-        <img
-          alt="Bella"
-          src="/aux-router/cat1.png"
-        />
-        <div>
-          <h2>
-            Bella
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Kitty"
-          src="/aux-router/cat2.png"
-        />
-        <div>
-          <h2>
-            Kitty
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Charlie"
-          src="/aux-router/cat3.png"
-        />
-        <div>
-          <h2>
-            Charlie
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Leo"
-          src="/aux-router/cat4.png"
-        />
-        <div>
-          <h2>
-            Leo
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Milo"
-          src="/aux-router/cat5.png"
-        />
-        <div>
-          <h2>
-            Milo
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-    </ul>
-  </section>,
-]
-`;
-
-exports[`Advanced example 4`] = `
-Array [
-  <nav>
-    <button
-      onClick={[Function]}
-    >
-      Cats
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      Dogs
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      Birds
-    </button>
+    </a>
   </nav>,
   <section>
     <h1>
@@ -506,526 +1428,32 @@ Array [
 ]
 `;
 
-exports[`Advanced example 5`] = `
+exports[`Advanced example /dogs(modal/)(panel/Bean) 1`] = `
 Array [
   <nav>
-    <button
+    <a
+      aria-current={null}
+      href="/cats(modal/)(panel/Bean)"
       onClick={[Function]}
     >
       Cats
-    </button>
-    <button
+    </a>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/dogs(modal/)(panel/Bean)"
       onClick={[Function]}
+      style={Object {}}
     >
       Dogs
-    </button>
-    <button
+    </a>
+    <a
+      aria-current={null}
+      href="/birds(modal/)(panel/Bean)"
       onClick={[Function]}
     >
       Birds
-    </button>
-  </nav>,
-  <section>
-    <h1>
-      Cats
-    </h1>
-    <ul>
-      <li>
-        <img
-          alt="Bella"
-          src="/aux-router/cat1.png"
-        />
-        <div>
-          <h2>
-            Bella
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Kitty"
-          src="/aux-router/cat2.png"
-        />
-        <div>
-          <h2>
-            Kitty
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Charlie"
-          src="/aux-router/cat3.png"
-        />
-        <div>
-          <h2>
-            Charlie
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Leo"
-          src="/aux-router/cat4.png"
-        />
-        <div>
-          <h2>
-            Leo
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Milo"
-          src="/aux-router/cat5.png"
-        />
-        <div>
-          <h2>
-            Milo
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-    </ul>
-  </section>,
-]
-`;
-
-exports[`Advanced example 6`] = `
-Array [
-  <nav>
-    <button
-      onClick={[Function]}
-    >
-      Cats
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      Dogs
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      Birds
-    </button>
-  </nav>,
-  <section>
-    <h1>
-      Cats
-    </h1>
-    <ul>
-      <li>
-        <img
-          alt="Bella"
-          src="/aux-router/cat1.png"
-        />
-        <div>
-          <h2>
-            Bella
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Kitty"
-          src="/aux-router/cat2.png"
-        />
-        <div>
-          <h2>
-            Kitty
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Charlie"
-          src="/aux-router/cat3.png"
-        />
-        <div>
-          <h2>
-            Charlie
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Leo"
-          src="/aux-router/cat4.png"
-        />
-        <div>
-          <h2>
-            Leo
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Milo"
-          src="/aux-router/cat5.png"
-        />
-        <div>
-          <h2>
-            Milo
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-    </ul>
-  </section>,
-  <div
-    className="MuiDrawer-root MuiDrawer-docked"
-  >
-    <div
-      className="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
-      style={
-        Object {
-          "pointerEvents": "",
-          "visibility": undefined,
-        }
-      }
-    >
-      <div
-        className="panel"
-      >
-        <img
-          alt="Bean"
-          src="/aux-router/dog1.png"
-        />
-        <p>
-          Name: 
-          Bean
-        </p>
-        <p>
-          Age: 
-          5
-        </p>
-        <button
-          onClick={[Function]}
-        >
-          Close
-        </button>
-      </div>
-    </div>
-  </div>,
-]
-`;
-
-exports[`Advanced example 7`] = `
-Array [
-  <nav>
-    <button
-      onClick={[Function]}
-    >
-      Cats
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      Dogs
-    </button>
-  </nav>,
-  <section>
-    <h1>
-      Cats
-    </h1>
-    <ul>
-      <li>
-        <img
-          alt="Bella"
-          src="/aux-router/cat1.png"
-        />
-        <div>
-          <h2>
-            Bella
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Kitty"
-          src="/aux-router/cat2.png"
-        />
-        <div>
-          <h2>
-            Kitty
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Charlie"
-          src="/aux-router/cat3.png"
-        />
-        <div>
-          <h2>
-            Charlie
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Leo"
-          src="/aux-router/cat4.png"
-        />
-        <div>
-          <h2>
-            Leo
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Milo"
-          src="/aux-router/cat5.png"
-        />
-        <div>
-          <h2>
-            Milo
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-    </ul>
-  </section>,
-]
-`;
-
-exports[`Advanced example 8`] = `
-Array [
-  <nav>
-    <button
-      onClick={[Function]}
-    >
-      Cats
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      Dogs
-    </button>
-  </nav>,
-  <section>
-    <h1>
-      Cats
-    </h1>
-    <ul>
-      <li>
-        <img
-          alt="Bella"
-          src="/aux-router/cat1.png"
-        />
-        <div>
-          <h2>
-            Bella
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Kitty"
-          src="/aux-router/cat2.png"
-        />
-        <div>
-          <h2>
-            Kitty
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Charlie"
-          src="/aux-router/cat3.png"
-        />
-        <div>
-          <h2>
-            Charlie
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Leo"
-          src="/aux-router/cat4.png"
-        />
-        <div>
-          <h2>
-            Leo
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-      <li>
-        <img
-          alt="Milo"
-          src="/aux-router/cat5.png"
-        />
-        <div>
-          <h2>
-            Milo
-          </h2>
-          <button
-            onClick={[Function]}
-          >
-            Open modal
-          </button>
-        </div>
-      </li>
-    </ul>
-  </section>,
-  <div>
-    <div
-      className="panel"
-    >
-      <img
-        alt="Bean"
-        src="/aux-router/dog1.png"
-      />
-      <p>
-        Name: 
-        Bean
-      </p>
-      <p>
-        Age: 
-        5
-      </p>
-      <button
-        onClick={[Function]}
-      >
-        Close
-      </button>
-    </div>
-  </div>,
-  <div>
-    <div
-      className="modal"
-    >
-      <img
-        alt="Kitty"
-        src="/aux-router/cat2.png"
-      />
-      <p>
-        Name: 
-        Kitty
-      </p>
-      <p>
-        Age: 
-        2
-      </p>
-      <button
-        onClick={[Function]}
-      >
-        Close
-      </button>
-    </div>
-  </div>,
-]
-`;
-
-exports[`Advanced example 9`] = `
-Array [
-  <nav>
-    <button
-      onClick={[Function]}
-    >
-      Cats
-    </button>
-    <button
-      onClick={[Function]}
-    >
-      Dogs
-    </button>
+    </a>
   </nav>,
   <section>
     <h1>
@@ -1114,84 +1542,391 @@ Array [
       </li>
     </ul>
   </section>,
-  <div>
-    <div
-      className="panel"
-    >
-      <img
-        alt="Bean"
-        src="/aux-router/dog1.png"
-      />
-      <p>
-        Name: 
-        Bean
-      </p>
-      <p>
-        Age: 
-        5
-      </p>
-      <button
-        onClick={[Function]}
-      >
-        Close
-      </button>
-    </div>
-  </div>,
-  <div>
-    <div
-      className="modal"
-    >
-      <img
-        alt="Kitty"
-        src="/aux-router/cat2.png"
-      />
-      <p>
-        Name: 
-        Kitty
-      </p>
-      <p>
-        Age: 
-        2
-      </p>
-      <button
-        onClick={[Function]}
-      >
-        Close
-      </button>
-    </div>
-  </div>,
 ]
 `;
 
-exports[`AuxLink renders correctly 1`] = `
-<button
-  onClick={[Function]}
->
-  Component A - one
-</button>
-`;
-
-exports[`AuxRoute does not render when path is empty 1`] = `null`;
-
-exports[`AuxRoute renders nested component when path contains correct data 1`] = `
+exports[`Advanced example /dogs(modal/Bella)(panel/) 1`] = `
 Array [
-  <p>
-    One
-  </p>,
-  <p>
-    Two
-  </p>,
+  <nav>
+    <a
+      aria-current={null}
+      href="/cats(modal/Bella)(panel/)"
+      onClick={[Function]}
+    >
+      Cats
+    </a>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/dogs(modal/Bella)(panel/)"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Dogs
+    </a>
+    <a
+      aria-current={null}
+      href="/birds(modal/Bella)(panel/)"
+      onClick={[Function]}
+    >
+      Birds
+    </a>
+  </nav>,
+  <section>
+    <h1>
+      Dogs
+    </h1>
+    <ul>
+      <li>
+        <img
+          alt="Bean"
+          src="/aux-router/dog1.png"
+        />
+        <div>
+          <h2>
+            Bean
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Bella"
+          src="/aux-router/dog2.png"
+        />
+        <div>
+          <h2>
+            Bella
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Axel"
+          src="/aux-router/dog3.png"
+        />
+        <div>
+          <h2>
+            Axel
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Odie"
+          src="/aux-router/dog4.png"
+        />
+        <div>
+          <h2>
+            Odie
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Sheba"
+          src="/aux-router/dog5.png"
+        />
+        <div>
+          <h2>
+            Sheba
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+    </ul>
+  </section>,
 ]
 `;
 
-exports[`AuxRoute renders nested component when path contains several independent routes 1`] = `
-<p>
-  Two
-</p>
+exports[`Advanced example /dogs(modal/Kitty)(panel/Bean) 1`] = `
+Array [
+  <nav>
+    <a
+      aria-current={null}
+      href="/cats(modal/Kitty)(panel/Bean)"
+      onClick={[Function]}
+    >
+      Cats
+    </a>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/dogs(modal/Kitty)(panel/Bean)"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Dogs
+    </a>
+    <a
+      aria-current={null}
+      href="/birds(modal/Kitty)(panel/Bean)"
+      onClick={[Function]}
+    >
+      Birds
+    </a>
+  </nav>,
+  <section>
+    <h1>
+      Dogs
+    </h1>
+    <ul>
+      <li>
+        <img
+          alt="Bean"
+          src="/aux-router/dog1.png"
+        />
+        <div>
+          <h2>
+            Bean
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Bella"
+          src="/aux-router/dog2.png"
+        />
+        <div>
+          <h2>
+            Bella
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Axel"
+          src="/aux-router/dog3.png"
+        />
+        <div>
+          <h2>
+            Axel
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Odie"
+          src="/aux-router/dog4.png"
+        />
+        <div>
+          <h2>
+            Odie
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Sheba"
+          src="/aux-router/dog5.png"
+        />
+        <div>
+          <h2>
+            Sheba
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+    </ul>
+  </section>,
+]
 `;
 
-exports[`AuxRoute renders when path contains correct data 1`] = `
-<p>
-  One
-</p>
+exports[`Advanced example /dogs(panel-parrot/Dakota) 1`] = `
+Array [
+  <nav>
+    <a
+      aria-current={null}
+      href="/cats(panel-parrot/Dakota)"
+      onClick={[Function]}
+    >
+      Cats
+    </a>
+    <a
+      aria-current="page"
+      className="selected"
+      href="/dogs(panel-parrot/Dakota)"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Dogs
+    </a>
+    <a
+      aria-current={null}
+      href="/birds(panel-parrot/Dakota)"
+      onClick={[Function]}
+    >
+      Birds
+    </a>
+  </nav>,
+  <section>
+    <h1>
+      Dogs
+    </h1>
+    <ul>
+      <li>
+        <img
+          alt="Bean"
+          src="/aux-router/dog1.png"
+        />
+        <div>
+          <h2>
+            Bean
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Bella"
+          src="/aux-router/dog2.png"
+        />
+        <div>
+          <h2>
+            Bella
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Axel"
+          src="/aux-router/dog3.png"
+        />
+        <div>
+          <h2>
+            Axel
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Odie"
+          src="/aux-router/dog4.png"
+        />
+        <div>
+          <h2>
+            Odie
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+      <li>
+        <img
+          alt="Sheba"
+          src="/aux-router/dog5.png"
+        />
+        <div>
+          <h2>
+            Sheba
+          </h2>
+          <button
+            onClick={[Function]}
+          >
+            Open panel
+          </button>
+        </div>
+      </li>
+    </ul>
+  </section>,
+  <div
+    className="MuiDrawer-root MuiDrawer-docked"
+  >
+    <div
+      className="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorBottom MuiDrawer-paperAnchorDockedBottom MuiPaper-elevation0"
+      style={
+        Object {
+          "pointerEvents": "",
+          "visibility": undefined,
+        }
+      }
+    >
+      <div
+        className="panel"
+      >
+        <img
+          alt="Dakota"
+          src="/aux-router/parrot1.png"
+        />
+        <p>
+          Name: 
+          Dakota
+        </p>
+        <p>
+          Age: 
+          1
+        </p>
+        <button
+          onClick={[Function]}
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>,
+]
 `;

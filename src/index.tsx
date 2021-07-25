@@ -4,21 +4,14 @@ import {
   BrowserRouter,
   Route,
   useRouteMatch,
-  NavLink
+  NavLink,
+  HashRouter
 } from 'react-router-dom'
 
 interface AuxLinkProps {
   componentName?: string
   componentValue?: string
   description: string
-}
-
-export const getMainRoute = () => {
-  let { url } = useRouteMatch()
-  if (url.indexOf('(') >= 0) {
-    return url.slice(0, url.indexOf('('))
-  }
-  return url
 }
 
 export const AuxLink = (props: AuxLinkProps) => {
@@ -81,25 +74,15 @@ export const AuxMainLink = (props: AuxMainLinkProps) => {
   function getPath(): string {
     let oldPath = history.location.pathname
     let newPath: string
-    let pathPrefix = ''
-    // if (
-    //   oldPath.indexOf('/', 1) >= 0 &&
-    //   oldPath.indexOf('(', 1) >= oldPath.indexOf('/', 1)
-    // ) {
-    //   pathPrefix =
-    //     '/' + oldPath.slice(1).slice(0, oldPath.slice(1).indexOf('/'))
-    //   if (props.path.indexOf(pathPrefix.slice(1)) >= 0) pathPrefix = ''
-    // }
     if (oldPath.indexOf('(') >= 0) {
-      newPath = pathPrefix + props.path + oldPath.slice(oldPath.indexOf('('))
+      newPath = props.path + oldPath.slice(oldPath.indexOf('('))
     } else {
-      newPath = pathPrefix + props.path
+      newPath = props.path
     }
     console.info(match)
     if (newPath.indexOf('/') == 0) {
       newPath = newPath.replace('/', '')
     }
-    // history.replace('/' + newPath)
     return '/' + newPath
   }
 
@@ -116,6 +99,10 @@ export const AuxMainLink = (props: AuxMainLinkProps) => {
 
 export const AuxRouter = (props: any) => {
   return <BrowserRouter> {props.children}</BrowserRouter>
+}
+
+export const AuxHashRouter = (props: any) => {
+  return <HashRouter> {props.children}</HashRouter>
 }
 
 interface AuxMainRouteProps {
