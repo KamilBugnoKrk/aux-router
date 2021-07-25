@@ -40,10 +40,10 @@ Array [
     </a>
     <a
       aria-current={null}
-      href="/birds/others"
+      href="/birds/owls"
       onClick={[Function]}
     >
-      Others
+      Owls
     </a>
   </div>,
 ]
@@ -91,10 +91,10 @@ Array [
     </a>
     <a
       aria-current={null}
-      href="/birds/others"
+      href="/birds/owls"
       onClick={[Function]}
     >
-      Others
+      Owls
     </a>
     <section>
       <h1>
@@ -110,11 +110,12 @@ Array [
             <h2>
               Dakota
             </h2>
-            <button
+            <a
+              className=""
               onClick={[Function]}
             >
               Open panel
-            </button>
+            </a>
           </div>
         </li>
         <li>
@@ -126,11 +127,12 @@ Array [
             <h2>
               Jasper
             </h2>
-            <button
+            <a
+              className=""
               onClick={[Function]}
             >
               Open panel
-            </button>
+            </a>
           </div>
         </li>
         <li>
@@ -142,11 +144,12 @@ Array [
             <h2>
               Ollie
             </h2>
-            <button
+            <a
+              className=""
               onClick={[Function]}
             >
               Open panel
-            </button>
+            </a>
           </div>
         </li>
       </ul>
@@ -197,10 +200,10 @@ Array [
     </a>
     <a
       aria-current={null}
-      href="/birds/others"
+      href="/birds/owls"
       onClick={[Function]}
     >
-      Others
+      Owls
     </a>
     <section>
       <h1>
@@ -216,11 +219,12 @@ Array [
             <h2>
               Dakota
             </h2>
-            <button
+            <a
+              className=""
               onClick={[Function]}
             >
               Open panel
-            </button>
+            </a>
           </div>
         </li>
         <li>
@@ -232,11 +236,12 @@ Array [
             <h2>
               Jasper
             </h2>
-            <button
+            <a
+              className=""
               onClick={[Function]}
             >
               Open panel
-            </button>
+            </a>
           </div>
         </li>
         <li>
@@ -248,11 +253,12 @@ Array [
             <h2>
               Ollie
             </h2>
-            <button
+            <a
+              className=""
               onClick={[Function]}
             >
               Open panel
-            </button>
+            </a>
           </div>
         </li>
       </ul>
@@ -301,10 +307,10 @@ Array [
     </a>
     <a
       aria-current={null}
-      href="/birds/others(panel-parrot/Dakota)"
+      href="/birds/owls(panel-parrot/Dakota)"
       onClick={[Function]}
     >
-      Others
+      Owls
     </a>
     <section>
       <h1>
@@ -320,11 +326,12 @@ Array [
             <h2>
               Dakota
             </h2>
-            <button
+            <a
+              className=""
               onClick={[Function]}
             >
               Open panel
-            </button>
+            </a>
           </div>
         </li>
         <li>
@@ -336,11 +343,12 @@ Array [
             <h2>
               Jasper
             </h2>
-            <button
+            <a
+              className=""
               onClick={[Function]}
             >
               Open panel
-            </button>
+            </a>
           </div>
         </li>
         <li>
@@ -352,11 +360,12 @@ Array [
             <h2>
               Ollie
             </h2>
-            <button
+            <a
+              className=""
               onClick={[Function]}
             >
               Open panel
-            </button>
+            </a>
           </div>
         </li>
       </ul>
@@ -389,11 +398,12 @@ Array [
           Age: 
           1
         </p>
-        <button
+        <a
+          className=""
           onClick={[Function]}
         >
           Close
-        </button>
+        </a>
       </div>
     </div>
   </div>,
@@ -440,10 +450,10 @@ Array [
     </a>
     <a
       aria-current={null}
-      href="/birds/others(panel-parrot/Ollie)(modal-cat/)(panel-dog/Bean)"
+      href="/birds/owls(panel-parrot/Ollie)(modal-cat/)(panel-dog/Bean)"
       onClick={[Function]}
     >
-      Others
+      Owls
     </a>
     <section>
       <h1>
@@ -459,11 +469,12 @@ Array [
             <h2>
               Dakota
             </h2>
-            <button
+            <a
+              className=""
               onClick={[Function]}
             >
               Open panel
-            </button>
+            </a>
           </div>
         </li>
         <li>
@@ -475,11 +486,12 @@ Array [
             <h2>
               Jasper
             </h2>
-            <button
+            <a
+              className=""
               onClick={[Function]}
             >
               Open panel
-            </button>
+            </a>
           </div>
         </li>
         <li>
@@ -491,11 +503,12 @@ Array [
             <h2>
               Ollie
             </h2>
-            <button
+            <a
+              className=""
               onClick={[Function]}
             >
               Open panel
-            </button>
+            </a>
           </div>
         </li>
       </ul>
@@ -528,11 +541,12 @@ Array [
           Age: 
           5
         </p>
-        <button
+        <a
+          className=""
           onClick={[Function]}
         >
           Close
-        </button>
+        </a>
       </div>
     </div>
   </div>,
@@ -563,11 +577,12 @@ Array [
           Age: 
           2
         </p>
-        <button
+        <a
+          className=""
           onClick={[Function]}
         >
           Close
-        </button>
+        </a>
       </div>
     </div>
   </div>,
@@ -615,11 +630,12 @@ Array [
           <h2>
             Bella
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -631,11 +647,12 @@ Array [
           <h2>
             Kitty
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -647,11 +664,12 @@ Array [
           <h2>
             Charlie
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -663,11 +681,12 @@ Array [
           <h2>
             Leo
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -679,11 +698,12 @@ Array [
           <h2>
             Milo
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
     </ul>
@@ -732,11 +752,12 @@ Array [
           <h2>
             Bella
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -748,11 +769,12 @@ Array [
           <h2>
             Kitty
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -764,11 +786,12 @@ Array [
           <h2>
             Charlie
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -780,11 +803,12 @@ Array [
           <h2>
             Leo
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -796,11 +820,12 @@ Array [
           <h2>
             Milo
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
     </ul>
@@ -849,11 +874,12 @@ Array [
           <h2>
             Bella
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -865,11 +891,12 @@ Array [
           <h2>
             Kitty
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -881,11 +908,12 @@ Array [
           <h2>
             Charlie
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -897,11 +925,12 @@ Array [
           <h2>
             Leo
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -913,11 +942,12 @@ Array [
           <h2>
             Milo
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
     </ul>
@@ -966,11 +996,12 @@ Array [
           <h2>
             Bella
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -982,11 +1013,12 @@ Array [
           <h2>
             Kitty
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -998,11 +1030,12 @@ Array [
           <h2>
             Charlie
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1014,11 +1047,12 @@ Array [
           <h2>
             Leo
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1030,11 +1064,12 @@ Array [
           <h2>
             Milo
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
     </ul>
@@ -1083,11 +1118,12 @@ Array [
           <h2>
             Bella
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1099,11 +1135,12 @@ Array [
           <h2>
             Kitty
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1115,11 +1152,12 @@ Array [
           <h2>
             Charlie
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1131,11 +1169,12 @@ Array [
           <h2>
             Leo
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1147,11 +1186,12 @@ Array [
           <h2>
             Milo
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
     </ul>
@@ -1200,11 +1240,12 @@ Array [
           <h2>
             Bella
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1216,11 +1257,12 @@ Array [
           <h2>
             Kitty
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1232,11 +1274,12 @@ Array [
           <h2>
             Charlie
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1248,11 +1291,12 @@ Array [
           <h2>
             Leo
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1264,11 +1308,12 @@ Array [
           <h2>
             Milo
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open modal
-          </button>
+          </a>
         </div>
       </li>
     </ul>
@@ -1300,11 +1345,12 @@ Array [
           Age: 
           1
         </p>
-        <button
+        <a
+          className=""
           onClick={[Function]}
         >
           Close
-        </button>
+        </a>
       </div>
     </div>
   </div>,
@@ -1352,11 +1398,12 @@ Array [
           <h2>
             Bean
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1368,11 +1415,12 @@ Array [
           <h2>
             Bella
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1384,11 +1432,12 @@ Array [
           <h2>
             Axel
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1400,11 +1449,12 @@ Array [
           <h2>
             Odie
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1416,11 +1466,12 @@ Array [
           <h2>
             Sheba
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
     </ul>
@@ -1469,11 +1520,12 @@ Array [
           <h2>
             Bean
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1485,11 +1537,12 @@ Array [
           <h2>
             Bella
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1501,11 +1554,12 @@ Array [
           <h2>
             Axel
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1517,11 +1571,12 @@ Array [
           <h2>
             Odie
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1533,11 +1588,12 @@ Array [
           <h2>
             Sheba
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
     </ul>
@@ -1586,11 +1642,12 @@ Array [
           <h2>
             Bean
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1602,11 +1659,12 @@ Array [
           <h2>
             Bella
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1618,11 +1676,12 @@ Array [
           <h2>
             Axel
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1634,11 +1693,12 @@ Array [
           <h2>
             Odie
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1650,11 +1710,12 @@ Array [
           <h2>
             Sheba
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
     </ul>
@@ -1703,11 +1764,12 @@ Array [
           <h2>
             Bean
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1719,11 +1781,12 @@ Array [
           <h2>
             Bella
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1735,11 +1798,12 @@ Array [
           <h2>
             Axel
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1751,11 +1815,12 @@ Array [
           <h2>
             Odie
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1767,11 +1832,12 @@ Array [
           <h2>
             Sheba
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
     </ul>
@@ -1820,11 +1886,12 @@ Array [
           <h2>
             Bean
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1836,11 +1903,12 @@ Array [
           <h2>
             Bella
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1852,11 +1920,12 @@ Array [
           <h2>
             Axel
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1868,11 +1937,12 @@ Array [
           <h2>
             Odie
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
       <li>
@@ -1884,11 +1954,12 @@ Array [
           <h2>
             Sheba
           </h2>
-          <button
+          <a
+            className=""
             onClick={[Function]}
           >
             Open panel
-          </button>
+          </a>
         </div>
       </li>
     </ul>
@@ -1920,11 +1991,12 @@ Array [
           Age: 
           1
         </p>
-        <button
+        <a
+          className=""
           onClick={[Function]}
         >
           Close
-        </button>
+        </a>
       </div>
     </div>
   </div>,

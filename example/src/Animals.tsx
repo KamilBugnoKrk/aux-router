@@ -5,7 +5,8 @@ import { Animal } from './Models'
 export enum Type {
   Cat,
   Dog,
-  Parrot
+  Parrot,
+  Owl
 }
 
 interface AnimalsProps {
@@ -44,6 +45,13 @@ const Animals = (props: AnimalsProps) => {
                     componentName='panel-parrot'
                     componentValue={animal.name}
                     description='Open panel'
+                  />
+                )}
+                {props.type === Type.Owl && (
+                  <AuxLink
+                    componentName='modal-owl'
+                    componentValue={animal.name}
+                    description='Open modal'
                   />
                 )}
               </div>

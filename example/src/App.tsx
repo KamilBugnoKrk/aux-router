@@ -1,20 +1,20 @@
 import React from 'react'
 import {
-  AuxRouter,
+  AuxHashRouter,
   AuxMainRoute,
   AuxMainLink,
   AuxRoute,
   AuxLink
 } from 'aux-router'
 import Animals, { Type } from './Animals'
-import { Cats, Dogs, Parrots } from './MockedData'
+import { Cats, Dogs, Owls, Parrots } from './MockedData'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
 import Modal from '@material-ui/core/Modal'
 import Birds from './Birds'
 
 const App = () => {
   return (
-    <AuxRouter>
+    <AuxHashRouter>
       <nav>
         <AuxMainLink
           activeClassName='selected'
@@ -52,8 +52,57 @@ const App = () => {
             >
               <div className='panel'>
                 <img src={animal.image} alt={animal.name} />
-                <p>Name: {animal.name}</p>
-                <p>Age: {animal.age}</p>
+                <div className='links'>
+                  <AuxLink
+                    activeClassName='selected'
+                    componentName='panel-dog'
+                    componentValue={`${animal.name}`}
+                    description='Details of dog'
+                  />
+                  <AuxLink
+                    activeClassName='selected'
+                    componentName='panel-dog'
+                    componentValue={`${animal.name}/${animal.name}-food`}
+                    description='Favourite dog`s food'
+                  />
+                  <AuxLink
+                    activeClassName='selected'
+                    componentName='panel-dog'
+                    componentValue={`${animal.name}/${animal.name}-owner`}
+                    description='Details of owner'
+                  />
+                </div>
+                <AuxRoute
+                  componentName='panel-dog'
+                  componentExactValue={animal.name}
+                >
+                  <p>Name: {animal.name}</p>
+                  <p>Age: {animal.age}</p>
+                </AuxRoute>
+                <AuxRoute
+                  componentName='panel-dog'
+                  componentValue={`${animal.name}/${animal.name}-owner`}
+                >
+                  <p>Name of the owner: {animal.owner?.name}</p>
+                  <p>Age of the owner: {animal.owner?.age}</p>
+                </AuxRoute>
+                <AuxRoute
+                  componentName='panel-dog'
+                  componentValue={`${animal.name}/${animal.name}-food`}
+                >
+                  <p className='food'>
+                    {animal.name}'s favourite food:{' '}
+                    {animal.food?.map((f, index) => {
+                      var delimiter =
+                        index !== animal.food!.length - 1 ? ', ' : ''
+                      return (
+                        <span key={`${f.name}-${index}`}>
+                          {f.name + delimiter}
+                        </span>
+                      )
+                    })}
+                  </p>
+                </AuxRoute>
                 <AuxLink componentName='panel-dog' description='Close' />
               </div>
             </SwipeableDrawer>
@@ -91,15 +140,78 @@ const App = () => {
             >
               <div className='modal'>
                 <img src={animal.image} alt={animal.name} />
-                <p>Name: {animal.name}</p>
-                <p>Age: {animal.age}</p>
+                <div className='links'>
+                  <AuxLink
+                    activeClassName='selected'
+                    componentName='modal-cat'
+                    componentValue={`${animal.name}`}
+                    description='Details of cat'
+                  />
+                  <AuxLink
+                    activeClassName='selected'
+                    componentName='modal-cat'
+                    componentValue={`${animal.name}/${animal.name}-food`}
+                    description='Favourite cat`s food'
+                  />
+                  <AuxLink
+                    activeClassName='selected'
+                    componentName='modal-cat'
+                    componentValue={`${animal.name}/${animal.name}-owner`}
+                    description='Details of owner'
+                  />
+                </div>
+                <AuxRoute
+                  componentName='modal-cat'
+                  componentExactValue={animal.name}
+                >
+                  <p>Name: {animal.name}</p>
+                  <p>Age: {animal.age}</p>
+                </AuxRoute>
+                <AuxRoute
+                  componentName='modal-cat'
+                  componentValue={`${animal.name}/${animal.name}-owner`}
+                >
+                  <p>Name of the owner: {animal.owner?.name}</p>
+                  <p>Age of the owner: {animal.owner?.age}</p>
+                </AuxRoute>
+                <AuxRoute
+                  componentName='modal-cat'
+                  componentValue={`${animal.name}/${animal.name}-food`}
+                >
+                  <p className='food'>
+                    {animal.name}'s favourite food:{' '}
+                    {animal.food?.map((f, index) => {
+                      var delimiter =
+                        index !== animal.food!.length - 1 ? ', ' : ''
+                      return <span>{f.name + delimiter}</span>
+                    })}
+                  </p>
+                </AuxRoute>
                 <AuxLink componentName='modal-cat' description='Close' />
               </div>
             </Modal>
           </AuxRoute>
         )
       })}
-    </AuxRouter>
+      {Owls.map((animal, index) => {
+        return (
+          <AuxRoute componentName='modal-owl' componentValue={animal.name}>
+            <Modal
+              open={true}
+              onClose={() => {}}
+              key={`${animal.name}-${index}`}
+            >
+              <div className='modal'>
+                <img src={animal.image} alt={animal.name} />
+                <p>Name: {animal.name}</p>
+                <p>Age: {animal.age}</p>
+                <AuxLink componentName='modal-owl' description='Close' />
+              </div>
+            </Modal>
+          </AuxRoute>
+        )
+      })}
+    </AuxHashRouter>
   )
 }
 

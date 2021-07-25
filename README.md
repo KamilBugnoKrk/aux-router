@@ -128,6 +128,7 @@ export default App
 - `componentName` - it is translated to a link that contains _(name/...)_. You don't have to specify it if the link is within a component that uses AuxRoute
 - `componentValue` - it is translated to a link that contains _(.../value)_
 - `description` - description of the link
+- `activeClassName` - css class that will be applied when the current aux path matches the (name/value)
 
 ### AuxMainRoute
 

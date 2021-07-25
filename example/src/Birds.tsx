@@ -1,7 +1,7 @@
 import React from 'react'
 import { AuxMainLink, AuxMainRoute } from 'aux-router'
 import Animals, { Type } from './Animals'
-import { Parrots } from './MockedData'
+import { Owls, Parrots } from './MockedData'
 
 const Birds = () => {
   return (
@@ -14,14 +14,14 @@ const Birds = () => {
       />
       <AuxMainLink
         activeClassName='selected'
-        path='birds/others'
-        description='Others'
+        path='birds/owls'
+        description='Owls'
       />
       <AuxMainRoute path='birds/parrots'>
         <Animals type={Type.Parrot} animals={Parrots} name='Parrots' />
       </AuxMainRoute>
-      <AuxMainRoute path='birds/others'>
-        <h3>Others.</h3>
+      <AuxMainRoute path='birds/owls'>
+        <Animals type={Type.Owl} animals={Owls} name='Owls' />
       </AuxMainRoute>
     </div>
   )

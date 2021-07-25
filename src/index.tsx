@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useEffect, useState } from 'react'
 import {
   useHistory,
   BrowserRouter,
@@ -9,55 +10,63 @@ import {
 } from 'react-router-dom'
 
 interface AuxLinkProps {
-  componentName?: string
+  componentName: string
   componentValue?: string
+  activeClassName?: string
   description: string
 }
 
 export const AuxLink = (props: AuxLinkProps) => {
   const history = useHistory()
-  const match = useRouteMatch()
+  const [getClassName, setClassName] = useState<string>(determineClassname())
 
-  function getComponentName() {
-    if (match.url.lastIndexOf('(') < 0) {
-      throw 'AuxLink should have componentName if it is not within AuxRoute element!'
-    }
-    return match.url.substring(match.url.lastIndexOf('(') + 1)
-  }
+  useEffect(() => {
+    return history.listen((location) => {
+      setClassName(determineClassname())
+      console.log(`You changed the page to: ${location.pathname}`)
+    })
+  }, [history])
 
   function onClick(): void {
     let oldPath = history.location.pathname
     let componentName = props.componentName
-      ? props.componentName
-      : getComponentName()
 
-    let regex: RegExp
-    if (componentName.indexOf(')') >= 0) {
-      componentName = componentName.replace(')', '')
-      regex = new RegExp(`(${componentName})`)
-    } else {
-      regex = new RegExp(`(${componentName}\\/\\w*)`)
-    }
+    let regex = new RegExp(`(${componentName}\\/[A-Za-z0-9_\\/\\-%$]*)`)
+
     let foundComponent = oldPath.match(regex)
+    let link: string
 
     if (foundComponent) {
-      history.push(
-        oldPath.replace(
-          regex,
-          `${componentName}/${props.componentValue ? props.componentValue : ''}`
-        )
+      link = oldPath.replace(
+        regex,
+        `${componentName}/${props.componentValue ? props.componentValue : ''}`
       )
     } else {
-      history.push(
+      link =
         oldPath +
-          `(${componentName}/${
-            props.componentValue ? props.componentValue : ''
-          })`
-      )
+        `(${componentName}/${props.componentValue ? props.componentValue : ''})`
     }
+    history.push(link)
   }
 
-  return <button onClick={onClick}>{props.description}</button>
+  function determineClassname(): string {
+    if (
+      history.location.pathname.indexOf(
+        `(${props.componentName}/${
+          props.componentValue ? props.componentValue : ''
+        })`
+      ) >= 0
+    ) {
+      return props.activeClassName ? props.activeClassName : ''
+    }
+    return ''
+  }
+
+  return (
+    <a className={getClassName} onClick={onClick}>
+      {props.description}
+    </a>
+  )
 }
 
 interface AuxMainLinkProps {
@@ -125,23 +134,23 @@ export const AuxMainRoute = (props: AuxMainRouteProps) => {
 
 interface AuxRouteProps {
   component?: any
-  componentName?: string
+  componentName: string
   componentValue?: string
+  componentExactValue?: string
   children?: React.ReactNode
 }
 
 export const AuxRoute = (props: AuxRouteProps) => {
-  const match = useRouteMatch()
-
   const getPath = (): string => {
-    if (!props.componentValue) {
-      return `*\\(${props.componentName}`
-    } else if (match.url && match.url != '/') {
-      return `*${match.url.replace(/[(]/g, `\\(`).replace(/[)]/, `\\)`)}/${
-        props.componentValue
-      }\\)*`
+    if (props.componentExactValue && props.componentValue) {
+      throw 'AuxRoute should have either componentValue or componentExactValue - not both at the same time!'
+    }
+    if (!props.componentValue && !props.componentExactValue) {
+      return `*\\(${props.componentName}*`
+    } else if (props.componentValue) {
+      return `*\\(${props.componentName}/${props.componentValue}*`
     } else {
-      return `*\\(${props.componentName}/${props.componentValue}\\)*`
+      return `*\\(${props.componentName}/${props.componentExactValue}\\)*`
     }
   }
 
