@@ -2,20 +2,20 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-nav > a {
-  margin: 20px 0 20px 20px;
-}
-
 a {
   background-color: blue;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
+}
+
+.selected {
+  background-color: #8080ff;
 }
 
 section {
@@ -27,6 +27,10 @@ img {
   height: 100px;
   border-radius: 50%;
   margin: 10px;
+}
+
+h2 {
+  margin-bottom: 5px;
 }
 
 ul {
@@ -47,34 +51,23 @@ li > div {
   flex-direction: column;
 }
 
-button {
-  background-color: blue;
-  border: none;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .panel {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 200px;
+  color: white;
 }
 
 .panel > p {
   margin: 0;
 }
 
-.panel > button {
+.panel > a {
   margin: 10px 0;
   background-color: white;
   color: black;
+  cursor: pointer;
 }
 
 .MuiDrawer-paper {
@@ -85,8 +78,10 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background: white;
-  width: 200px;
+  width: 350px;
+  height: 290px;
   position: absolute;
   left: calc(50% - 100px);
   top: calc(50% - 200px);
@@ -96,6 +91,36 @@ button {
   margin: 0;
 }
 
-.modal > button {
+.modal > a {
   margin: 10px 0;
+}
+
+.panel > .links > a {
+  width: 160px;
+  cursor: pointer;
+}
+
+.panel > .links {
+  margin-bottom: 20px;
+}
+
+.panel > .food {
+  line-height: 38px;
+}
+
+.modal > .food {
+  line-height: 36px;
+}
+
+.modal > .links {
+  display: flex;
+  margin: 10px;
+}
+
+.modal > .links > a {
+  font-size: 12px !important;
+}
+
+a {
+  cursor: pointer;
 }

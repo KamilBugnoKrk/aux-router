@@ -27,9 +27,28 @@ const App = () => {
 export default App
 ```
 
+### AuxHashRouter
+
+It is a core component. All other aux-router components should be inside AuxRouter element.
+
+```js
+import React from 'react'
+import { AuxHashRouter } from 'aux-router'
+
+const App = () => {
+  return <AuxHashRouter>...</AuxHashRouter>
+}
+
+export default App
+```
+
+### Aux path vs. main path
+
+Since the rest of components use terms _aux path_ and _main path_ it is important to understand the difference between them. Let's assume that we have this URL: example.com/a(b/c), the main path is `/a` and the aux path is `(b/c)`.
+
 ### AuxRoute
 
-It is a route matcher. The AuxRoute that matches the current URL will rendered.
+It is a route matcher. The AuxRoute that matches the current aux path will rendered.
 
 ```js
 import React from 'react'
@@ -72,13 +91,13 @@ const App = () => {
 export default App
 ```
 
-- `componentName` - name of the component, the component will be rendered when the current path contains _(name/...)_. You don't have to specify it if the AuxRoute is within a component that already uses AuxRoute
-- `componentValue` - value the component, the component will be rendered when the current path contains _(.../value)_
+- `componentName` - name of the component, the component will be rendered when the current aux path contains _(name/...)_. You don't have to specify it if the AuxRoute is within a component that already uses AuxRoute
+- `componentValue` - value the component, the component will be rendered when the current aux path contains _(.../value)_
 - `component` - component to render
 
 ### AuxLink
 
-It is a component that is responsible for creating links in your application.
+It is a component that is responsible for creating links for aux path in your application.
 
 ```js
 import React from 'react'
@@ -109,6 +128,89 @@ export default App
 - `componentName` - it is translated to a link that contains _(name/...)_. You don't have to specify it if the link is within a component that uses AuxRoute
 - `componentValue` - it is translated to a link that contains _(.../value)_
 - `description` - description of the link
+- `activeClassName` - css class that will be applied when the current aux path matches the (name/value)
+
+### AuxMainRoute
+
+It is a route matcher. The AuxMainRoute that matches the current main path will rendered.
+
+```js
+import React from 'react'
+import { AuxRouter, AuxMainRoute } from 'aux-router'
+
+function ComponentA() {
+  return (...)
+}
+
+function ComponentB() {
+  return (...)
+}
+
+const App = () => {
+  return (
+    <AuxRouter>
+        {/*
+            ComponentA is rendered
+            only when URL contains
+            /a as a main path
+        */}
+        <AuxMainRoute
+            path='/a'
+            component={ComponentA}
+        />
+
+        {/*
+            ComponentB is rendered
+            only when URL contains
+            /b as a main path
+        */}
+        <AuxMainRoute path='/b'>
+          <ComponentB />
+        </AuxMainRoute>
+        />
+    </AuxRouter>)
+}
+
+export default App
+```
+
+- `component` - the component, that will be rendered when the current main path matches to the _path_ property
+- `path` - the main path
+
+### AuxMainLink
+
+It is a component that is responsible for creating links for main path in your application.
+
+```js
+import React from 'react'
+import { AuxMainLink } from 'aux-router'
+
+const MyNavigation = () => {
+  return (
+    <nav>
+      <ul>
+        <li>
+          {/*
+                It creates a link to /a
+            */}
+          <AuxMainLink
+            activeClassName='selected'
+            path='/a'
+            description='Go to component a'
+          />
+        </li>
+      </ul>
+    </nav>
+  )
+}
+
+export default App
+```
+
+- `activeClassName` - css class that will be applied when the current main path matches the _path_ property
+- `activeStyle` - css style that will be applied when the current main path matches the _path_ property
+- `description` - description of the link
+- `path` - it is translated to a link that contains \_/value in the main path
 
 ### Example
 
