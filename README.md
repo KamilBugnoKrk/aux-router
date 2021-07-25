@@ -91,7 +91,7 @@ const App = () => {
 export default App
 ```
 
-- `componentName` - name of the component, the component will be rendered when the current aux path contains _(name/...)_. You don't have to specify it if the AuxRoute is within a component that already uses AuxRoute
+- `componentName` - name of the component, the component will be rendered when the current aux path contains _(name/...)_
 - `componentValue` - value the component, the component will be rendered when the current aux path contains _(.../value)_
 - `component` - component to render
 
@@ -125,7 +125,7 @@ const MyNavigation = () => {
 export default App
 ```
 
-- `componentName` - it is translated to a link that contains _(name/...)_. You don't have to specify it if the link is within a component that uses AuxRoute
+- `componentName` - it is translated to a link that contains _(name/...)_
 - `componentValue` - it is translated to a link that contains _(.../value)_
 - `description` - description of the link
 - `activeClassName` - css class that will be applied when the current aux path matches the (name/value)
@@ -213,10 +213,6 @@ export default App
 - `path` - it is translated to a link that contains \_/value in the main path
 
 ### Example
-
-[CodesAndBox](https://codesandbox.io/s/aux-router-example-kmrjy?file=/src/App.js)
-
-### More advanced example
 
 [CodesAndBox](https://codesandbox.io/s/advanced-example-bf9vt?file=/src/App.tsx)
 
