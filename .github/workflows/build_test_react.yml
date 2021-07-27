@@ -27,4 +27,6 @@ jobs:
       - name: npm ci, build, and test example
         working-directory: ./example
         run: |
+          npm i
+          npm run build --if-present
           npm test
