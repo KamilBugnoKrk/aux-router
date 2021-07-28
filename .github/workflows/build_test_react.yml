@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: yarn 
-        run: |
+      - run: |
           yarn 
           yarn test
       - name: yarn example
