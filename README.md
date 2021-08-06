@@ -10,6 +10,14 @@
 npm install --save aux-router
 ```
 
+## Do I need auxiliary routing?
+
+It can be especially useful when you have a side panel in your app and you want to switch between pages without losing the visibility of that panel:
+![Side panel that uses auxiliary routing](/panel1.gif)
+
+Another important use case for auxiliary routing is a situation when you have an advanced modal or a side panel and you want to share the URL that contains information about what modal/panel is currently opened:
+![Modal that uses auxiliary routing](/modal1.gif)
+
 ## Documentation
 
 ### AuxRouter
